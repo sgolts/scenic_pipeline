@@ -1,0 +1,11 @@
+name: scenic
+channels:
+  - defaults
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - anndata
+  - numpy
+  - loompy
+  - pyyaml
