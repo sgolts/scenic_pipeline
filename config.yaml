@@ -1,0 +1,15 @@
+paths:
+  output_directory: ./results/  # Where SCENIC output and work directory will go
+
+pipeline:
+  loom_input: /scratch/indikar_root/indikar1/shared_data/scenic/resources/input_loom/processed_merged.loom # Path to input loom file
+  loom_output: /scratch/indikar_root/indikar1/shared_data/scenic/resources/output_loom/hyb_scenic.loom     # Output loom file path
+  TFs: /scratch/indikar_root/indikar1/shared_data/scenic/resources/tfs/allTFs_hg38.txt                     # Transcription factors list
+  motifs: /scratch/indikar_root/indikar1/shared_data/scenic/resources/motifs/motifs-v10nr_clust-nr.hgnc-m0.001-o0.0.tbl   # Motif table
+  db: /scratch/indikar_root/indikar1/shared_data/scenic/resources/motifs/*feather                # Feather-format database (ranking DB)
+  thr_min_genes: 200
+  thr_min_cells: 3
+
+nextflow:
+  process_name: scenic_run                   # Job name for Nextflow process
+  nextflow_config: nextflow.config           # Path to Nextflow config with SLURM or other executor settings
