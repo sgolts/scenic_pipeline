@@ -57,7 +57,7 @@ Edit `config.yaml` to specify:
 
 ```bash
 chmod +x slurm_submit.sh
-./slurm_submit.sh
+sbatch slurm_submit.sh
 ```
 
 ---
