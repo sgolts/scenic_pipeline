@@ -20,7 +20,7 @@ def convert_h5ad_to_loom(h5ad_path, loom_out_path):
 
     # Prepare loom row and column attributes
     row_attrs = {
-        "Gene": genes
+        "features": genes
     }
     col_attrs = {
         "CellID": cells,
