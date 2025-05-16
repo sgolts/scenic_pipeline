@@ -4,7 +4,7 @@
 #SBATCH --account=indikar1
 #SBATCH --partition=standard
 #SBATCH --mail-user=sgolts@umich.edu
-#SBATCH --mail-type=START,END,FAIL
+#SBATCH --mail-type=BEGIN,END,FAIL
 #SBATCH --mem=100G
 #SBATCH --time=24:00:00
 #SBATCH --nodes=1                     
